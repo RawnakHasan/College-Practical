@@ -10,7 +10,7 @@ int main() {
     printf("Enter the Value of Base: ");
     scanf("%d", &base);
 
-    area = (base * height) / 2.0;
+    area = (base * height) / 2;
 
     printf("Area: %.2f\n", area);
 

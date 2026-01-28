@@ -1,16 +1,21 @@
 #include <stdio.h>
 
 int main() {
-  int n, sum = 0, i;
+  int L, S, R;
 
-  printf("Enter a positive integer number = ");
-  scanf("%d",&n);
+  printf("Enter large value: ");
+  scanf("%d", &L);
 
-  for (i = 1; i <= n; i += 1) {
-    sum += i;
+  printf("Enter small value: ");
+  scanf("%d", &S);
+
+  while (S != 0) {
+    R = L % S;
+    L = S;
+    S = R;
   }
 
-  printf("Result = %d\n", sum);
+  printf("GCD = %d\n", L);
 
   return 0;
 }
